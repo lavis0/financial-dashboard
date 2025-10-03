@@ -3,7 +3,6 @@
 import {z} from 'zod';
 import {revalidatePath} from 'next/cache';
 import postgres from "postgres";
-import {invoices} from "@/app/lib/placeholder-data";
 import {redirect} from "next/navigation";
 
 const sql = postgres(process.env.POSTGRES_URL!, {ssl: 'require'});
